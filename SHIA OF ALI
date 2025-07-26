@@ -1,0 +1,130 @@
+<!DOCTYPE index.html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imam Ali – The Lion of Allah</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    #mute-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 50;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- 🎵 Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/ali-theme.mp3" type="audio/mpeg">
+  </audio>/index.html/audio/ali-theme.mp3
+
+
+
+  <!-- 🔇 Mute/Unmute Button -->
+  <button id="mute-btn" class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">
+    🔊 Mute Music
+  </button>
+
+  <script>
+    const audio = document.getElementById("bg-music");
+    const btn = document.getElementById("mute-btn");
+
+    btn.addEventListener("click", () => {
+      audio.muted = !audio.muted;
+      btn.textContent = audio.muted ? "🔇 Unmute Music" : "🔊 Mute Music";
+    });
+  </script>
+
+  <!-- Header -->
+  <header class="text-center py-10 bg-gray-800 shadow-lg">
+    <h1 class="text-4xl font-bold text-green-400">Imam Ali (AS) – The Lion of Allah 🦁</h1>
+    <p class="mt-2 text-gray-300 max-w-3xl mx-auto">
+      A journey through the life, legacy, and divine appointment of Imam Ali ibn Abi Talib, supported by Shia and Sunni hadith.
+    </p>
+  </header>
+
+  <!-- Image -->
+  <section class="my-8 text-center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Calligraphy_Ali.png/640px-Calligraphy_Ali.png" alt="Imam Ali Calligraphy" class="mx-auto w-64 h-auto rounded-lg shadow-md" />
+    <p class="text-sm text-gray-400 mt-2">Calligraphy of Imam Ali's name</p>
+  </section>
+
+  <!-- Who is Imam Ali -->
+  <section class="max-w-5xl mx-auto p-6 bg-gray-800 rounded-lg mb-10">
+    <h2 class="text-2xl font-bold text-green-300 mb-4">🧔 Who is Imam Ali?</h2>
+    <p class="text-gray-200 mb-2">
+      Imam Ali ibn Abi Talib (AS) was the cousin and son-in-law of Prophet Muhammad ﷺ, the first male to accept Islam, and the fourth caliph in Sunni tradition but the first Imam in Shia belief.
+    </p>
+    <p class="text-gray-300">
+      He was born inside the Kaaba and is known for his bravery, justice, knowledge, and devotion to Islam. His famous title is <strong>Asadullah</strong> – "The Lion of Allah".
+    </p>
+  </section>
+
+  <!-- Life Story -->
+  <section class="max-w-5xl mx-auto p-6 bg-gray-800 rounded-lg mb-10">
+    <h2 class="text-2xl font-bold text-green-300 mb-4">📜 Key Moments in His Life</h2>
+    <ul class="list-disc list-inside text-gray-300 space-y-2">
+      <li>✅ Born in the Kaaba in Mecca</li>
+      <li>✅ Slept in the Prophet's bed during the Hijrah to protect him</li>
+      <li>✅ Married Fatimah (RA), daughter of Prophet Muhammad ﷺ</li>
+      <li>✅ Fought in all major battles: Badr, Uhud, Khaybar</li>
+      <li>✅ Known for his justice as Caliph (656–661 CE)</li>
+      <li>✅ Martyred in Masjid Kufa in 661 CE by Ibn Muljam</li>
+    </ul>
+  </section>
+
+  <!-- Sunni Hadith Section -->
+  <section class="max-w-5xl mx-auto p-6 bg-gray-800 rounded-lg mb-10">
+    <h2 class="text-2xl font-bold text-yellow-400 mb-4">📚 Sunni Hadith on Imam Ali’s Wilayah</h2>
+    <div class="text-gray-200 space-y-4">
+      <div>
+        <h3 class="font-semibold text-lg text-white">📖 Hadith al-Ghadir</h3>
+        <p>"Whoever I am his Mawla (master), Ali is his Mawla." – <em>Sahih Tirmidhi, Musnad Ahmad</em></p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg text-white">🌙 Hadith of the Gate of Knowledge</h3>
+        <p>"I am the city of knowledge and Ali is its gate." – <em>Sunan al-Tirmidhi</em></p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg text-white">🛡️ Battle of Khaybar</h3>
+        <p>"Tomorrow I shall give the banner to a man who loves Allah and His Messenger and Allah and His Messenger love him... Ali." – <em>Sahih Bukhari, Sahih Muslim</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shia Hadith Section -->
+  <section class="max-w-5xl mx-auto p-6 bg-gray-800 rounded-lg mb-10">
+    <h2 class="text-2xl font-bold text-purple-400 mb-4">📚 Shia Hadith on Imam Ali’s Wilayah</h2>
+    <div class="text-gray-200 space-y-4">
+      <div>
+        <h3 class="font-semibold text-lg text-white">👤 Imam al-Sadiq (AS) on Ghadir</h3>
+        <p>"The Prophet raised Ali’s hand and said: 'Ali is the leader of whoever considers me their leader'." – <em>Al-Kafi, Vol. 1</em></p>
+      </div>
+      <div>
+        <h3 class="font-semibold text-lg text-white">🌟 Twelve Imams</h3>
+        <p>"The Imams after me are twelve, the first is Ali." – <em>Al-Kafi, Volume 1</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wilayah Explanation -->
+  <section class="max-w-5xl mx-auto p-6 bg-gray-800 rounded-lg mb-10">
+    <h2 class="text-2xl font-bold text-blue-400 mb-4">🕋 What is Wilayah?</h2>
+    <p class="text-gray-200">
+      <strong>Wilayah</strong> in Shia Islam refers to the divine guardianship and spiritual leadership granted by Allah to the Prophet and the Imams. Imam Ali (AS) was the first Wali appointed after the Prophet’s death at Ghadir Khumm.
+    </p>
+    <p class="text-gray-300 mt-2">
+      It's not just political leadership, but includes guiding people in faith, knowledge, and divine authority.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm p-6 border-t border-gray-700">
+    © 2025 Shia Islamic Knowledge Hub. All rights reserved.
+  </footer>
+
+</body>
+</html>
